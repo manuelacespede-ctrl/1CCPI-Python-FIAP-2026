@@ -1,0 +1,21 @@
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+operacao = input("Digite a operação (+, -, *, /): ")
+
+# Verifica a operação e calcula
+if operacao == "+":
+    resultado = num1 + num2
+elif operacao == "-":
+    resultado = num1 - num2
+elif operacao == "*":
+    resultado = num1 * num2
+elif operacao == "/":
+    if num2 != 0:
+        resultado = num1 / num2
+    else:
+        resultado = "Erro: divisão por zero"
+else:
+    resultado = "Operação inválida"
+
+# Mostra o resultado
+print("Resultado:", resultado)
